@@ -36,6 +36,7 @@ fn main() {
     
     let _r = v.iter_mut()
     .find(|x| {
+        // there is no 'mutable find' even for mutable iterators hmm
         x.dat_rust().match_do()
     });
 }
